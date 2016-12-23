@@ -1,11 +1,11 @@
 {
   "name": "selector-tokenizer",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "Module for fast css selector tokenization from string",
   "main": "dist/selector-tokenizer.js",
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/eugeneford/selector-tokenizer.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eugeneford/selector-tokenizer.git"
   },
   "scripts": {
     "gulp": "gulp",
@@ -47,6 +47,13 @@
     ]
   },
   "transform": [
-    [ "babelify", { "presets": [ "es2015" ] } ]
+    [
+      "babelify",
+      {
+        "presets": [
+          "es2015"
+        ]
+      }
+    ]
   ]
 }
