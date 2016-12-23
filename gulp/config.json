@@ -1,0 +1,14 @@
+{
+  "js": {
+    "srcPath": "./src/",
+    "srcFile": "selector-tokenizer.es6",
+    "destPath": "./dist/",
+    "destFile": "selector-tokenizer.js"
+  },
+  "test": {
+    "srcPath": "./test/js/",
+    "srcFile": "suite.es6",
+    "destPath": "./test/build/",
+    "destFile": "suite.js"
+  }
+}
