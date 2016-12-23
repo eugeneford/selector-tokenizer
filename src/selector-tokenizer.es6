@@ -61,7 +61,7 @@ const CF_WORD = function (code) {
  * tokens = tokenizer.tokenize(".page main");
  * tokens   //=> [{type: "class", value: ".page"}, {type: "type", value: "main"}]
  */
-export default class SelectorTokenizer {
+class SelectorTokenizer {
   constructor(){}
 
   /**
@@ -388,7 +388,4 @@ export default class SelectorTokenizer {
   }
 }
 
-// Export to global scope
-let lib = window.lib || {};
-lib.SelectorTokenizer = SelectorTokenizer;
-window.lib = lib;
+export default SelectorTokenizer;
