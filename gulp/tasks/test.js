@@ -8,7 +8,7 @@ var babelify = require("babelify");
 var source = require("vinyl-source-stream");
 
 gulp.task("test", function () {
-  return browserify(config.test.srcPath+config.test.srcFile, {debug: true})
+  return browserify(config.test.srcPath+config.test.srcFile, {debug: false})
     .transform(babelify)
     .bundle()
     .pipe(source(config.test.destFile))
