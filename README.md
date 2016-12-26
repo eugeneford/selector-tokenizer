@@ -47,7 +47,7 @@ Read a grammar token from a string starting at target position.
 
 ```javascript
 tokenizer = new SelectorTokenizer();
-token = tokenizer.tokenAt(".classname", 0); 
+token = tokenizer.tokenAt(".classname", 0);
 token   //=> { type: "class", value: ".classname" }
 ```
 
