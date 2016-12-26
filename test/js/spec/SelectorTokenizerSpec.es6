@@ -1,4 +1,3 @@
-// import SelectorTokenizer from "../../../src/selector-tokenizer.es6";
 import SelectorTokenizer from "../../../dist/selector-tokenizer.js";
 
 console.log(SelectorTokenizer);

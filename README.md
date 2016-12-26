@@ -1,9 +1,7 @@
 # Selector Tokenizer
 Module for fast css selector tokenization from string
 
-```
-npm install selector-tokenizer
-```
+[![NPM](https://nodei.co/npm/selector-tokenizer.png?downloads=true)](https://nodei.co/npm/selector-tokenizer/)
 
 ## What does this repo about
 
@@ -28,25 +26,28 @@ The tokenization method is based on a set of lexer grammars rules. The full list
 ### Basic Example
 The following example illustrates the principle the SelectorTokenizer.tokenize method
 ```javascript
+tokenizer = new SelectorTokenizer();
 tokens = tokenizer.tokenize(".page main");
-tokens   //=> [{type: "class", value: ".page"}, {type: "type", value: "main"}]
+tokens   //=> [{type: "class", value: ".page"}, {type: "descendant", value: " "}, {type: "type", value: "main"}]
 ```
 
 ### Methods
-SelectorTokenizer has a set of different methods you can find to be usefull.
+SelectorTokenizer has a set of different methods you can find to be useful.
 
 ##### tokenize(selectorText);
 Create a set of tokens from target selector string
 ```javascript
+tokenizer = new SelectorTokenizer();
 tokens = tokenizer.tokenize(".page main");
-tokens   //=> [{type: "class", value: ".page"}, {type: "type", value: "main"}]
+tokens   //=> [{type: "class", value: ".page"}, {type: "descendant", value: " "}, {type: "type", value: "main"}]
 ```
 
 ##### tokenAt(selectorText, startIndex);
 Read a grammar token from a string starting at target position. 
 
 ```javascript
-token = checker.tokenAt(".classname", 0);
+tokenizer = new SelectorTokenizer();
+token = tokenizer.tokenAt(".classname", 0); 
 token   //=> { type: "class", value: ".classname" }
 ```
 
