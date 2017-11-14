@@ -51,7 +51,7 @@ const CF_WORD = function (code) {
  * <universal-selector> - for basic universal selector "*"
  * <attribute-selector> - for basic attribute selectors eg. "[attr]", "[attr=val]", "[attr^=val]" etc.
  * <pseudo-selector> - for pseudo-element and pseudo-class-selectors eg. ":first-child", "::first-letter"
- * <descendat-selector> - for selector's descendant combinator " "
+ * <descendant-selector> - for selector's descendant combinator " "
  * <adjacent-sibling-selector> - for selector's adjacent sibling combinator "+"
  * <general-sibling-selector> - for selector's general sibling combinator "~"
  * <child-selector> - for selector's child combinator ">"
